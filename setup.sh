@@ -27,7 +27,7 @@ warn()    { echo -e "${YELLOW}[!]${NC} $*"; }
 error()   { echo -e "${RED}[✘]${NC} $*"; exit 1; }
 
 # ── Config ────────────────────────────────────────────────────────────────────
-REPO_URL="https://github.com/yeshwanthlm/Create-Custom-MCP-Server.git"
+REPO_URL="https://github.com/hari9255/custom-mcp-server-demo.git"
 APP_DIR="/opt/mcp-server"
 SERVICE_NAME="mcp-server"
 APP_USER="${SUDO_USER:-ubuntu}"
