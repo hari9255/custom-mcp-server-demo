@@ -6,7 +6,7 @@ from langchain_tavily import TavilySearch
 os.environ["TAVILY_API_KEY"] = "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"
 mcp = MCPServer("MCP_Server")
 
-@mcp.tool
+@mcp.tool(description="use this tool to get latest or current information from web search")
 def web_search_tool(query: str):
     '''
     use this tool to get latest or current information from web search
@@ -20,7 +20,7 @@ def web_search_tool(query: str):
 
 
 
-@mcp.tool
+@mcp.tool(description="use this tool to generate a random number")
 def random_number_generator():
     '''
     use this tool to generate a random number
